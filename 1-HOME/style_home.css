@@ -1,0 +1,311 @@
+@import url(../7-LINKS/CSS_&_JS/style.css/);
+
+/* !COLORS AND TRANSITIONS */
+:root {
+    /** COLOR */
+    --blue-primary-color:           rgb(9 17 141);
+    --red-primary-color:            rgb(239 55 66);
+
+    --yellow-secundary-color:       rgb(242 190 91);
+    --blue-secundary-color:         rgb(0 43 212);
+    --light_blue-secundary-color:   rgb(53 124 183);
+    --light_beige-secundary-color:  rgb(197 189 188);
+    --dark_beige-secundary-color:   rgb(207 177 118);
+    --white-secundary-color:        rgb(214 213 206);
+    --green-secundary-color:        rgb(39 92 103);
+    --red-secundary-color:          rgb(192 95 75);
+
+    --navbar-color-when-scroll:     rgba(0, 0, 0, 0.6);
+
+    /** TRANSITIONS */
+}
+
+/* !Text Sources */
+@font-face {
+    /** Main Source */
+    font-family: 'Helvetica Now Black';
+    src: url('../7-LINKS/FONTES/HelveticaNowText-Black.ttf') format('truetype');
+}
+@font-face {
+    /** Secundary Source */
+    font-family: 'Has';
+    src: url('./HelveticaNowText-Regular.ttf') format('truetype');
+}
+
+
+/* CAROUSEL */
+    .carousel-caption{
+        width: 100%;
+        left: 5%;
+    }
+
+    .carousel-item {
+    	height: 100vh;
+        min-height: 300px;
+    }
+
+    .carousel-caption h5 {
+    	font-size: 45px;
+    	letter-spacing: 2px;
+        padding: 30px;
+        text-align: left;
+    	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+        left: 0px;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+        margin-right: 45%;
+        margin-left: 45%;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    .carousel-indicators li{
+        position: relative;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        width: 64px;
+        height: 49px;
+        margin-right: 3px;
+        margin-left: 3px;
+        margin: 0px;
+        cursor: pointer;
+        background-image: url(../7-LINKS/IMAGENS/1-HOME/indicator.png);
+        background-position: center;
+        background-size: cover;
+        background-color: transparent;
+        transition: 1s;
+        list-style: none;
+    }
+
+    .carousel-indicators .active {
+        transition: 1s;
+        background-image: url(../7-LINKS/IMAGENS/1-HOME/indicatorActive.png);
+        background-color: transparent;
+    }
+
+    #textoSlide1 {
+        font-size: 45px;
+	    letter-spacing: 2px;
+        text-align: left;
+        padding: 150px 35px;
+    }
+
+    #textoSlide2 {
+        font-size: 45px;
+	    letter-spacing: 2px;
+        text-align: left;
+        color: var(--blue-primary-color);
+        padding: 125px 35px;
+    }
+
+    #textoSlide3 {
+        font-size: 45px;
+    	letter-spacing: 2px;
+        text-align: left;
+        padding: 150px 35px;
+    }
+
+    .w-100 {
+    	height: 100vh;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+    	width: 7%;
+    }
+
+    @media only screen and (max-width: 767px) {
+	    .navbar-nav.ml-auto {
+		    background: black;
+	    }
+    }
+
+    
+/* ÁREA ESCRITÓRIO */
+    .office{
+        position: relative;
+        width: 100%;
+        padding: 25px 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        row-gap: 30px;
+        background-color: white;
+        color: var(--blue-primary-color);
+    }
+
+    .logo_office {
+        position: relative;
+        max-width: 360px;
+    }
+
+    .org_office {
+        flex-direction: column;
+        column-gap: 300px;
+    }
+
+    .txtOffice {
+        width: 100%;
+        text-align:justify;
+        font-weight: bold;
+    }
+
+    .btn_saiba_mais_Office {
+        font-weight: bold;
+        padding: 7px 12px;
+        color: var(--blue-primary-color);
+        border-color: var(--red-primary-color);
+        background-color: transparent;
+        border-radius: 3px;
+        transition: .5s ease;
+    }
+
+/* OCCUPATION */
+    .occupation{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        display: flex;
+        align-items: center;
+        gap: 140px;
+        background-color: var(--blue-primary-color);
+        color: var(--red-primary-color);
+    }
+
+    .occupation_title {
+        align-self: flex-start;
+        margin-left: 18%;
+        font-family:'Helvetica Now Black', serif;
+    }
+
+    .org_occupation{
+        align-self: flex-start;
+        flex-direction: column;
+        color: white;
+        gap: 30px;
+    }
+
+    .occupation .org_occupation p {
+        padding-top: 20px;
+        text-align:justify;
+        margin: 0px 0px 100px 0px;
+    }
+
+    .occupation .org_occupation .txtBorder {
+        border-top:2px solid var(--red-primary-color);
+        border-right:2px solid var(--red-primary-color);
+        border-radius: 3px;
+        margin-right: 120px;
+    }
+
+    .btn_saiba_mais_Occupation {
+        font-weight: bold;
+        padding: 7px 12px;
+        color: white;
+        border-color: var(--red-primary-color);
+        background-color: transparent;
+        border-radius: 3px;
+        transition: .5s ease;
+    }
+
+/* LAWYERS */
+    .lawyers {
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        display: flex;
+        text-align: center;
+        color: var(--blue-primary-color);
+    }
+
+    .lawyers p {
+        font-weight: bold;
+    }
+
+    .picturesLawyers {
+        position: relative;
+        max-width: 360px;
+        padding: 40px;
+    }
+
+    .txtLawyers {
+        text-align: justify;
+        font-weight: bold;
+        margin-left: 388px;
+    }
+
+/* CAREER */
+    .career{
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        min-height: 80vh;
+        display: flex;
+        background-color: var(--red-primary-color);
+        color: white;
+    }
+
+    .career p {
+        margin-left: 50%;
+        margin-top: 10%;
+    }
+
+    .saibamais_career {
+        font-weight: bold;
+        padding: 5px 0px;
+        min-width: none;
+        color: white;
+        margin-top: 2.7%;
+        margin-left: 50%;
+        margin-right: 42%;
+        border-color: var(--blue-primary-color);
+        background-color: transparent;
+        border-radius: 3px;
+        transition: .5s ease;
+    }
+
+    .contacts {
+        margin-top: 14.6%;
+        align-self: center;
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .contacts hr {
+
+        background-color: var(--blue-primary-color);
+    }
+
+    .contacts li {
+        display: inline;
+        
+    }
+    .contacts a {
+        color: var(--blue-primary-color);
+        padding: 0px 30px;
+    }
+
+    .btn_saiba_mais_Office:hover,
+    .btn_saiba_mais_Occupation:hover{
+        cursor: pointer;
+        color: var(--red-primary-color);
+        transition: .5s ease;
+    }
+
+    .saibamais_career:hover {
+        cursor: pointer;
+        color: var(--blue-primary-color);
+        transition: .5s ease;
+    }
